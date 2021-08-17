@@ -38,7 +38,7 @@ export class ProductsService {
       ProductDescription,
       ProductPrice
     };
-    return this.http.put<Product>(`${this.uri} /${id}`, obj);
+    return this.http.put<Product>(`${this.uri}/${id}`, obj);
   }
 
   deleteProduct(id: number) : Observable<Product>{
